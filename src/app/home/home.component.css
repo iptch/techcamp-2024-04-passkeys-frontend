@@ -1,0 +1,21 @@
+.container {
+  width: 300px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.container > mat-card {
+  width: 100%;
+}
+
+.container mat-progress-spinner {
+  display: block;
+  margin-right: 10px;
+}

@@ -1,0 +1,20 @@
+{
+    "creationOptions": {
+        "challenge": "cX0GVHidj2H9bw-Y0E1YJmPZV4MNDzkzKWmxj4Wor0w=",
+        "rp": {
+            "name": "techcamp-passkey-demo-server",
+            "id": "localhost"
+        },
+        "user": {
+            "id": "_g2CGop8dKMYTipee05EQNc-t6E1yWSqTufn86qK0jY=",
+            "name": "joe@example.org",
+            "displayName": "Joe Example"
+        },
+        "pubKeyCredParams": [
+            {
+              "type": "public-key",
+              "alg": -7
+            }
+          ]
+    }
+}

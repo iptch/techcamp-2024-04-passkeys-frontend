@@ -1,0 +1,35 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Registration</mat-card-title>
+    <mat-card-subtitle
+      >Register a new Passkey with the server</mat-card-subtitle
+    >
+  </mat-card-header>
+  <mat-card-content>
+    <form #registrationForm="ngForm">
+      <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input matInput name="username" [(ngModel)]="username" required />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Display Name</mat-label>
+        <input matInput name="displayName" [(ngModel)]="displayName" required />
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <mat-progress-spinner
+      *ngIf="inProgress"
+      [mode]="'indeterminate'"
+      [diameter]="20"
+      [color]="'accent'"
+    ></mat-progress-spinner>
+    <button
+      mat-button
+      (click)="registerClicked()"
+      [disabled]="inProgress || registrationForm.invalid"
+    >
+      Register
+    </button>
+  </mat-card-actions>
+</mat-card>
